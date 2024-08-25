@@ -3630,27 +3630,17 @@ end
 --Zen Hub
 local WazureV1 = loadstring(game:HttpGet("https://github.com/ErutTheTeru/uilibrary/blob/main/Wazure%20V1%20Lib/Source.lua?raw=true"))()
 
-local WazureGui = WazureV1:Start({
-	["Name"] = "W-azure (Remake)",
-	["Logo Player"] = "rbxassetid://18243105495",
-	["Name Player"] = "ruteteru",
-	["Tab Width"] = 120,
-	["Color"] = Color3.fromRGB(6.000000117346644, 141.0000067949295, 234.00000125169754),
-	["Custom Toggle"] = false,
-	["Save Config"] = {
-		["Folder"] = "W-azure",
-		["Name Config"] = "Config"
-	},
-	["CloseCallBack"] = function()
-		WazureV1:Notify({
-			["Title"] = "Alert",
-			["Content"] = "Closed UI!",
-			["Logo"] = "rbxassetid://18289959127",
-			["Time"] = 0.5,
-			["Delay"] = 5
-		})
-	end
-})
+local Win = library:Evil()
+local Tab1 = Win:Tab("General",14477284625)
+local Farms = Win:Tab("Main",14477543197)
+local Sea = Win:Tab("Sea Event",14477284625)
+local Tab2 = Win:Tab("Combat",14477563495)
+local RaceMirage = Win:Tab("Other",14477517268)
+local Fruit = Win:Tab("DevilFruit",14537413902)
+local Tab3 = Win:Tab("Visual",14477598542)
+local Tab4 = Win:Tab("Shop",14477621526)
+local Tab5 = Win:Tab("Miscs",14477663692)
+local PlayerStatus = Win:Tab("Status",14477673361)
 -------------[Tab1]-------------
 local Page1 = Tab1:CraftPage(1)
 Page1:Seperator("Main Farm")
