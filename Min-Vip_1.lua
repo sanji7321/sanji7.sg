@@ -3628,20 +3628,28 @@ end
 end
 end
 --Zen Hub
-local sitinklib = loadstring(game:HttpGet("https://github.com/ErutTheTeru/uilibrary/blob/main/Sitink%20Lib/Source.lua?raw=true"))()
+local WazureV1 = loadstring(game:HttpGet("https://github.com/ErutTheTeru/uilibrary/blob/main/Wazure%20V1%20Lib/Source.lua?raw=true"))()
 
-local sitinkgui = sitinklib:Start({
-  ["Name"] = "sitink hub",
-  ["Description"] = "- from R's UI",
-  ["Info Color"] = Color3.fromRGB(5.000000176951289, 59.00000028312206, 113.00000086426735),
-  ["Logo Info"] = "rbxassetid://18243105495",
-  ["Logo Player"] = "rbxassetid://18243105495",
-  ["Name Info"] = "sitink Hub Info",
-  ["Name Player"] = "ruteteru",
-  ["Info Description"] = "discord.gg/3Aatp4Nhjp",
-  ["Tab Width"] = 135,
-  ["Color"] = Color3.fromRGB(127.00000002980232, 146.00000649690628, 242.00000077486038),
-  ["CloseCallBack"] = function() end
+local WazureGui = WazureV1:Start({
+	["Name"] = "W-azure (Remake)",
+	["Logo Player"] = "rbxassetid://18243105495",
+	["Name Player"] = "ruteteru",
+	["Tab Width"] = 120,
+	["Color"] = Color3.fromRGB(6.000000117346644, 141.0000067949295, 234.00000125169754),
+	["Custom Toggle"] = false,
+	["Save Config"] = {
+		["Folder"] = "W-azure",
+		["Name Config"] = "Config"
+	},
+	["CloseCallBack"] = function()
+		WazureV1:Notify({
+			["Title"] = "Alert",
+			["Content"] = "Closed UI!",
+			["Logo"] = "rbxassetid://18289959127",
+			["Time"] = 0.5,
+			["Delay"] = 5
+		})
+	end
 })
 -------------[Tab1]-------------
 local Page1 = Tab1:CraftPage(1)
