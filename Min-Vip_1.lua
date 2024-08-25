@@ -3628,7 +3628,7 @@ end
 end
 end
 --Zen Hub
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/daucoghe2/cotdo/main/cotdo",true))()
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/middle.lua'))() end)
 
 local Win = library:Evil()
 local Tab1 = Win:Tab("General",14477284625)
