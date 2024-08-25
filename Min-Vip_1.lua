@@ -3630,17 +3630,19 @@ end
 --Zen Hub
 local sitinklib = loadstring(game:HttpGet("https://github.com/ErutTheTeru/uilibrary/blob/main/Sitink%20Lib/Source.lua?raw=true"))()
 
-local Win = library:Evil()
-local Tab1 = Win:Tab("General",14477284625)
-local Farms = Win:Tab("Main",14477543197)
-local Sea = Win:Tab("Sea Event",14477284625)
-local Tab2 = Win:Tab("Combat",14477563495)
-local RaceMirage = Win:Tab("Other",14477517268)
-local Fruit = Win:Tab("DevilFruit",14537413902)
-local Tab3 = Win:Tab("Visual",14477598542)
-local Tab4 = Win:Tab("Shop",14477621526)
-local Tab5 = Win:Tab("Miscs",14477663692)
-local PlayerStatus = Win:Tab("Status",14477673361)
+local sitinkgui = sitinklib:Start({
+  ["Name"] = "sitink hub",
+  ["Description"] = "- from R's UI",
+  ["Info Color"] = Color3.fromRGB(5.000000176951289, 59.00000028312206, 113.00000086426735),
+  ["Logo Info"] = "rbxassetid://18243105495",
+  ["Logo Player"] = "rbxassetid://18243105495",
+  ["Name Info"] = "sitink Hub Info",
+  ["Name Player"] = "ruteteru",
+  ["Info Description"] = "discord.gg/3Aatp4Nhjp",
+  ["Tab Width"] = 135,
+  ["Color"] = Color3.fromRGB(127.00000002980232, 146.00000649690628, 242.00000077486038),
+  ["CloseCallBack"] = function() end
+})
 -------------[Tab1]-------------
 local Page1 = Tab1:CraftPage(1)
 Page1:Seperator("Main Farm")
