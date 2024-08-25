@@ -3628,7 +3628,7 @@ end
 end
 end
 --Zen Hub
-local WazureV1 = loadstring(game:HttpGet("https://github.com/ErutTheTeru/uilibrary/blob/main/Wazure%20V1%20Lib/Source.lua?raw=true"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/daucoghe2/cotdo/main/cotdo",true))()
 
 local Win = library:Evil()
 local Tab1 = Win:Tab("General",14477284625)
